@@ -1,0 +1,405 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+}
+body span {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+img {
+  object-fit: cover;
+  height: 50%;
+  margin: 0;
+}
+.images-grid {
+  flex-wrap: wrap;
+  max-width: 70%;
+}
+.profile-paper {
+  margin: 10px auto;
+  width: 530px;
+  padding: 40px;
+}
+.post-image {
+  height: 88vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+}
+.card-media {
+  width: 100%;
+  min-height: 450px;
+  position: relative;
+  scrollbar-width: none;
+}
+.image {
+  object-position: center;
+  object-fit: cover;
+  scrollbar-width: none;
+  min-height: 90vh;
+  width: 100%;
+}
+.swipable {
+  width: 100%;
+  height: 100%;
+  scrollbar-width: none;
+  position: relative;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.stepper1,
+.post-image-full {
+  width: 400px;
+  height: 40vh;
+  object-position: center;
+  object-fit: cover;
+  margin: 0px auto;
+  position: relative;
+}
+.num-of-likes {
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.caption {
+  padding-left: 10px;
+  margin-top: 4px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.paper-upload {
+  width: 500px;
+  min-height: 150px;
+  max-height: 1000px;
+  margin: 10px auto;
+  text-align: center;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.upload-div {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.17rem;
+  text-align: left;
+  padding: 10px;
+}
+.upload-illust,
+.friendreq-illust {
+  width: 90%;
+  height: 300px;
+}
+.selected-image {
+  width: 90%;
+  height: 300px;
+  margin: 0px auto;
+  position: relative;
+}
+.stepper {
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  margin: 0;
+  background: transparent;
+  padding: 0;
+}
+.card-media {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  scrollbar-width: none;
+}
+.image {
+  object-position: center;
+  object-fit: cover;
+  scrollbar-width: none;
+  height: 60vh;
+  width: 100%;
+}
+.swipable {
+  width: 100%;
+  height: 100%;
+  scrollbar-width: none;
+  position: relative;
+  object-fit: cover;
+  overflow: hidden;
+}
+.upload-btn-div {
+  width: 100%;
+  height: 60px;
+  position: relative;
+}
+.friends-paper {
+  width: 500px;
+  max-height: 100vh;
+  text-align: center;
+  margin: 10px auto;
+}
+.friendreq-card {
+  width: 100%;
+  margin: 0px auto;
+  text-align: left;
+  padding: 0;
+  height: 58px;
+}
+.friendreq-card button {
+  font-size: 0.6rem;
+}
+.post-image-full-grid {
+  margin-bottom: 10px;
+}
+.bottom-nav-link {
+  width: 20px;
+}
+.bottom-nav {
+  width: 20px;
+  margin: 0px auto;
+}
+.unfriend-alert {
+  width: 400px;
+  margin: 0px auto;
+}
+.image-in-grid {
+  max-height: 240px;
+
+  position: relative;
+  padding: 4px;
+}
+
+.image-in-grid img {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+.likes-and-comments {
+  position: absolute;
+  background: rgb(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 0;
+}
+.comments-illust {
+  width: 90%;
+  height: auto;
+}
+.hover-likes {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.image-in-grid:hover .likes-and-comments {
+  display: block;
+}
+.heart-icon {
+  z-index: 200;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.6;
+  color: white;
+  transform: scale(1);
+  animation: lub 0.3s linear;
+  animation-fill-mode: forwards;
+  transition: 0.2s ease-in-out all;
+}
+@keyframes lub {
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(2.4);
+  }
+  83% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(2.4);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .profile-paper {
+    width: 96%;
+    padding: 20px;
+  }
+  .profile-paper h5 {
+    font-size: 1.3rem;
+  }
+
+  .friends-paper {
+    width: 100%;
+  }
+  .profile-paper p {
+    font-size: 0.8rem;
+  }
+  .upload-illust {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  .friendreq-illust {
+    width: 90%;
+    object-fit: cover;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 408px) {
+  .stepper,
+  .post-image-full {
+    width: 100%;
+  }
+  .images-grid {
+    max-width: 97%;
+  }
+  .image-in-grid {
+    max-height: 120px;
+  }
+}
+@media only screen and (max-width: 530px) {
+  .paper-upload {
+    width: 95%;
+  }
+  .selected-image {
+    width: 100%;
+  }
+  .images-grid {
+    max-width: 97%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .post-image-full-grid {
+    max-width: 400px;
+    margin: 0px auto;
+  }
+  .post-image-full {
+    margin: 0px auto;
+  }
+  .images-grid {
+    max-width: 90%;
+  }
+  .image-in-grid {
+    max-height: 170px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .post-image-full-grid {
+    max-width: 100%;
+  }
+  .unfriend-alert {
+    width: 350px;
+    margin: 0px auto;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .images-grid {
+    max-width: 100%;
+  }
+  .image-in-grid {
+    height: 160px;
+  }
+}
+@media only screen and (max-width: 306px) {
+  .images-grid {
+    max-width: 100%;
+  }
+  .image-in-grid {
+    max-height: 96px;
+  }
+}
+@media only screen and (max-width: 1028px) {
+  .images-grid {
+    max-width: 85%;
+  }
+}
+@media only screen and (max-width: 922px) {
+  .images-grid {
+    max-width: 93%;
+  }
+}
+@media only screen and (max-width: 846px) {
+  .images-grid {
+    max-width: 97%;
+  }
+  .image-in-grid {
+    max-height: 200px;
+  }
+}
+@media only screen and (max-width: 538px) {
+  .image-in-grid {
+    max-height: 170px;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 365px) {
+  .image-in-grid {
+    height: 120px;
+  }
+  .selected-image {
+    width: 96%;
+    height: 250px;
+  }
+  .upload-illust {
+    height: 180px;
+  }
+}
+@media only screen and (max-width: 306px) {
+  .image-in-grid {
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .image {
+    height: 45vh;
+  }
+  .card-media {
+    height: 250px;
+    margin: 0;
+    width: 95%;
+  }
+  .friendreq-card p {
+    font-size: 0.8rem;
+  }
+  .friendreq-card button {
+    font-size: 0.62rem;
+    padding: 3px 4px;
+    min-width: 3rem;
+    text-transform: capitalize;
+  }
+  .unfriend-alert p {
+    font-size: 0.79rem;
+  }
+  .unfriend-alert {
+    width: 100%;
+    margin: auto;
+  }
+  .nav {
+    height: 45px;
+    vertical-align: middle;
+    line-height: 30px;
+  }
+  .nav h5 {
+    margin-top: 0px;
+    font-size: 1.4rem;
+  }
+  .friends-paper h6 {
+    font-size: 0.9rem;
+  }
+}

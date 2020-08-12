@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins&display=swap");
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+@font-face {
+  font-family: "my-font";
+  src: url("Billabong.ttf") format("truetype");
+}
+.register-paper input[type="text"],
+input[type="password"],
+input[type="number"] {
+  height: 40px;
+  padding: 0px 14px;
+  padding-top: 2px;
+  font-size: 0.9rem;
+}
+
+.register-paper {
+  height: auto;
+  margin: 34px auto;
+  width: 304px;
+}
+.insta-title {
+  font-family: "my-font";
+  font-size: 1.8rem;
+  letter-spacing: 0.04rem;
+}
+.login-title {
+  font-family: "Oswald";
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.register-title {
+  font-family: "Oswald";
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+.search-results {
+  position: absolute;
+  width: 256px;
+  max-height: 130px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background: white;
+}
+.search-grid {
+  background: pink;
+  position: relative;
+}
+.wrapper {
+  width: 500px;
+  max-height: 400px;
+  margin: 50px auto;
+  position: relative;
+}
+.wrapper button {
+  text-transform: capitalize;
+  padding: 4px 6px;
+}
+
+.title {
+  font-family: "my-font";
+  width: auto;
+  text-align: center;
+  margin-bottom: 0px;
+  margin: 0px auto;
+  font-size: 2.5rem;
+}
+.register-paper label {
+  height: 36px;
+  top: -6px;
+  font-size: 0.9rem;
+}
+.swipable {
+  width: 100%;
+}
+.paper2 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.paper2-form input[type="password"] {
+  height: 40px;
+  padding: 0px 14px;
+  padding-top: 1px;
+  font-size: 0.9rem;
+}
+.paper2-form {
+  margin: 40px auto;
+  height: auto;
+  width: 364px;
+  padding: 10px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+.wrapper button {
+  margin: 0px 4px;
+}
+.paper2-inputs {
+  text-align: left;
+  width: 200px;
+  margin: 0px auto;
+}
+.textwrapper {
+  width: 90%;
+  height: 70px;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.text-swipable {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.text-grid {
+  height: 100vh;
+  position: relative;
+  background: url("../bg.png");
+  background-size: cover;
+  background-position: center;
+}
+.div1 {
+  height: auto;
+  background: transparent;
+  color: white;
+  margin-bottom: 0px;
+  font-family: "Poppins";
+}
+.div2 {
+  height: auto;
+  margin-bottom: 10px;
+  color: white;
+  font-family: "Poppins";
+}
+.grid2 {
+  height: 100vh;
+  padding: 0;
+  background: linear-gradient(45deg, #ff2cdf, #0014ff);
+  border-left: none;
+  outline: none;
+  position: relative;
+}
+.love-by-saiteja {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+/* home image */
+.empty-posts-img {
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .text-grid {
+    height: 100px;
+    background-position: top;
+  }
+  .text-grid h4 {
+    font-size: 1rem;
+  }
+  .text-grid p {
+    font-size: 0.8rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  .div1 {
+    margin: 0px auto;
+    margin-bottom: 4px;
+  }
+  .text-swipable {
+    width: 100%;
+    height: 60px;
+  }
+  .div2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .empty-posts-img {
+    width: 90%;
+    margin: 0px auto;
+    height: auto;
+  }
+  .wrapper {
+    width: 100%;
+
+    margin-top: 0px;
+  }
+  .register-paper {
+    height: auto;
+    width: 90%;
+    margin: 10px auto;
+
+    max-height: 400px;
+  }
+  .paper2 {
+    width: 100%;
+  }
+  .paper2-form {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 600px) and (min-width: 388px) {
+  .textwrapper {
+    height: 70px;
+
+    width: 330px;
+    padding: 0;
+  }
+}
