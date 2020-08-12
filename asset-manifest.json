@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/instaclone/static/css/main.205ce932.chunk.css",
-    "main.js": "/instaclone/static/js/main.0e115c4e.chunk.js",
-    "main.js.map": "/instaclone/static/js/main.0e115c4e.chunk.js.map",
+    "main.js": "/instaclone/static/js/main.72de0bfa.chunk.js",
+    "main.js.map": "/instaclone/static/js/main.72de0bfa.chunk.js.map",
     "runtime-main.js": "/instaclone/static/js/runtime-main.b8d28f71.js",
     "runtime-main.js.map": "/instaclone/static/js/runtime-main.b8d28f71.js.map",
     "static/css/2.4707e12a.chunk.css": "/instaclone/static/css/2.4707e12a.chunk.css",
     "static/js/2.f6f49ea4.chunk.js": "/instaclone/static/js/2.f6f49ea4.chunk.js",
     "static/js/2.f6f49ea4.chunk.js.map": "/instaclone/static/js/2.f6f49ea4.chunk.js.map",
     "index.html": "/instaclone/index.html",
-    "precache-manifest.e6f651266f9ef0212a7ef106f33794f5.js": "/instaclone/precache-manifest.e6f651266f9ef0212a7ef106f33794f5.js",
+    "precache-manifest.ed37109aa8e59953afa652a4db385e74.js": "/instaclone/precache-manifest.ed37109aa8e59953afa652a4db385e74.js",
     "service-worker.js": "/instaclone/service-worker.js",
     "static/css/2.4707e12a.chunk.css.map": "/instaclone/static/css/2.4707e12a.chunk.css.map",
     "static/css/main.205ce932.chunk.css.map": "/instaclone/static/css/main.205ce932.chunk.css.map",
@@ -25,6 +25,6 @@
     "static/css/2.4707e12a.chunk.css",
     "static/js/2.f6f49ea4.chunk.js",
     "static/css/main.205ce932.chunk.css",
-    "static/js/main.0e115c4e.chunk.js"
+    "static/js/main.72de0bfa.chunk.js"
   ]
 }
